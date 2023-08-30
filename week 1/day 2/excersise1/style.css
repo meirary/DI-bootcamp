@@ -1,0 +1,23 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: red;
+    overflow: auto;
+  }
+  
+  i{
+    align-items: left;
+    padding: 5px;
+    padding-left: 10px;
+  }
+  .product{
+    float: right; 
+   }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
