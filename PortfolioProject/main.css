@@ -1,0 +1,27 @@
+*{
+    font-family: "Raleway";
+}
+body{
+    margin: 0;
+    background-color: grey;
+}
+.coverimg{
+    position: relative;
+    height: 100%;
+}
+.img-thumbnail{
+    width: 600px;
+    height: 800px;
+    border-radius: 50% !important;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 500px;
+    padding: 5%;
+    justify-content: center;
+}
+picture{
+    display: inline-block;
+}

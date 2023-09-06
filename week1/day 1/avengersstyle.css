@@ -1,0 +1,48 @@
+
+body {
+    margin:0;
+    background-image: url('https://user-images.githubusercontent.com/30896388/168069577-2f570d08-61d3-49d8-b7dd-c4b9192aaf68.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0f0f0f;
+    height: 60px;
+  }
+  
+  li {
+    float: right;
+    font-size: medium;
+
+  }
+  
+  li a {
+    display: block;
+    padding: 8px; 
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  h1 {
+    text-align: left;
+    position: relative;
+    top: 350px;
+    left: 200px;
+    font-size: 6rem;
+  }
+  .texto{
+    position: relative;
+    top: 300px;
+    width: 700px;
+    margin-left: 10% ;
+    font-size: xx-large;
+  }
+ i{
+  color: white;
+ }
