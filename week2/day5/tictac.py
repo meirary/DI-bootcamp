@@ -1,9 +1,9 @@
 
-#board and empty positions 
+
 board=['1','2','3','4','5','6','7','8','9']
 empty = [0,1,2,3,4,5,6,7,8]
 
-#function to display board
+
 def display_board():
   print('  |   |   ')
   print(board[0]+' | '+board[1]+' | '+board[2])
@@ -17,7 +17,7 @@ def display_board():
   print(board[6]+' | '+board[7]+' | '+board[8])
   print('  |   |   ')
 
-#function to take inputs from player-I and II
+
 def player_input(player):
   player_symbol = ['X','O']
   correct_input = True
@@ -35,13 +35,13 @@ def player_input(player):
     board[position] = player_symbol[player] 
     return 1
 
-#function checks if any player won
+
 def check_win():
-  #define players symbols and winning positions
+
   player_symbol = ['X','O']
   winning_positions =[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
 
-  #check all winning positions for matching placements
+ 
   for check in winning_positions:
     first_symbol = board[check[0]]
     if first_symbol != ' ':
@@ -64,7 +64,6 @@ def check_win():
   else:
     return 1
 
-#function to invoke functions to play
 def play():
   player = 0
   while empty and check_win():    
@@ -74,6 +73,5 @@ def play():
   if not empty:
     print("NO WINNER!")
 
-#driver code
 if __name__ == '__main__':
   play()

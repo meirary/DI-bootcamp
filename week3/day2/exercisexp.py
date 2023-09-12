@@ -77,6 +77,6 @@ print(dog1.bark())
 print(dog2.run_speed())  
 print(dog1.fight(dog3)) 
 
-# Exercises 3
+
 
 
