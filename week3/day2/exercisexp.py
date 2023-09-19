@@ -30,18 +30,17 @@ class Siamese(Cat):
     def sing(self, sounds):
         return f'{sounds}'
 
-# Create instances of different cat breeds
-bengal_cat = Bengal("Bengal Cat", 3)
-chartreux_cat = Chartreux("Chartreux Cat", 4)
-siamese_cat = Siamese("Siamese Cat", 2)
 
-# Create a list of all cats
+bengal_cat = Bengal("Bengal Cat", 3)
+chartreux_cat = Chartreux("Chartreux Cat", 9)
+siamese_cat = Siamese("Siamese Cat", 1)
+
+
 all_cats = [bengal_cat, chartreux_cat, siamese_cat]
 
-# Create an instance of the Pets class with all the cats
 sara_pets = Pets(all_cats)
 
-# Take all the cats for a walk
+
 sara_pets.walk()
 
 # Exercises 2
@@ -78,5 +77,47 @@ print(dog2.run_speed())
 print(dog1.fight(dog3)) 
 
 
+# Exercises 3
+
+import random
 
 
+class Dog:
+    def __init__(self, name, breed):
+        self.name = name
+        self.breed = breed
+
+    def bark(self):
+        print(f"{self.name} says Woof!")
+
+
+class PetDog(Dog):
+    def __init__(self, name, breed):
+        super().__init__(name, breed)
+        self.trained = False
+
+    def train(self):
+        super().bark()
+        self.trained = True
+
+    def play(self, *dog_names):
+        print(f"{', '.join(dog_names)} all play together")
+
+    def do_a_trick(self):
+        if self.trained:
+            trick = random.choice([
+                f"{self.name} does a barrel roll",
+                f"{self.name} stands on his back legs",
+                f"{self.name} shakes your hand",
+                f"{self.name} plays dead"
+            ])
+            print(trick)
+        else:
+            print(f"{self.name} is not trained yet.")
+
+
+if __name__ == "__main__":
+    pet_dog = PetDog("Perrito", "Golden Retriever")
+    pet_dog.train()
+    pet_dog.play("Popo", "Max")
+    pet_dog.do_a_trick()
